@@ -1,11 +1,9 @@
 
 function App() {
   return (
-    <>
-      <h1>Willem's Potfolio</h1>
-      <p>Let's do this</p>
-      <button className="w-fit text-white font-bold py-2 px-4 rounded-3xl bg-cyan-500">Start now</button>
-    </>
+    <div className="h-dvh w-screen font-roboto font-semibold text-cyan-500 p-[200px]">
+      <h1 className="text-2xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore sit animi maiores ipsum in atque deleniti, ab ipsam illum a est ea ad modi beatae molestiae repellendus totam quasi similique blanditiis odio. Dolore, explicabo totam. Eius ut at aspernatur consequatur nulla sed aliquam qui? At distinctio non consequuntur exercitationem porro.</h1>
+    </div>
   )
 }
 
