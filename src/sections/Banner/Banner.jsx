@@ -9,7 +9,7 @@ import javascript from '../../assets/javascript.svg';
 
 function Banner() {
     return (
-        <div className="flex m-auto max-w-[1440px] mt-4 pb-8 gap-2 h-auto lg:h-screen lg:flex-row flex-col">
+        <div className="flex m-auto max-w-[1440px] mt-4 pb-8 gap-2 h-auto lg:h-[90vh] lg:flex-row flex-col">
             {/* Left */}
             <div className="lg:w-1/2 ">
                 <h1 className="text-[40px] text-balance md:text-wrap sm:text-[52px] md:text-[64px]">Transforming Ideas into Impactful <span className="font-bold font-roboto italic text-emerald-500">Digital Solutions</span></h1>
