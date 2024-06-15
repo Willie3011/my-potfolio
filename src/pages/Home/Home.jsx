@@ -1,9 +1,12 @@
 import Navbar from '../../components/Navbar/Navbar'
+import Banner from '../../sections/Banner/Banner'
 
 function Home() {
   return (
-    <div className="oveflow-hidden">
+    <div className="h-auto">
         <Navbar/>
+        <Banner/>
+        
     </div>
   )
 }

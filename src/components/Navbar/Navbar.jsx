@@ -52,7 +52,7 @@ function Navbar() {
             </div>
 
             {/* Mobile menu */}
-            <div className={toggleMenu === true ? "absolute top-[60px] right-0 left-0 md:right-[16px] bg-slate-700 text-white md:w-[400px] w-screen transition-all duration-300" : "transition-all duration-500 ease-out absolute -top-[100%] right-0 left-0 md:right-[16px] bg-slate-700 text-white md:w-[400px] w-screen"}>
+            <div className={toggleMenu === true ? "absolute top-[60px] left-0 md:left-auto md:right-[32px] rounded-b-md md:rounded-md bg-slate-800 text-white md:w-[400px] w-screen transition-all duration-300" : "transition-all duration-500 ease-out absolute -top-[100%] right-0 left-0 md:right-[0px] bg-slate-700 text-red md:w-[400px] w-screen"}>
                 <ul className="p-4 flex flex-col w-full items-center gap-2 text-xl">
                     <li className=" font-semibold p-2 transition-all duration-300 hover:text-emerald-200">
                         <a href="#">Home</a>
