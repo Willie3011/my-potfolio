@@ -19,7 +19,8 @@ function Navbar() {
         toggleMenu === false ? setToggleMenu(true) : setToggleMenu(false);
     }
     return (
-        <div className="p-2 h-[60px] flex items-center justify-between">
+        <nav className="p-2 h-[60px] flex items-center justify-between">
+            <div className="container w-[80%] m-auto flex justify-between">
             <div className="font-semibold text-xl">
                 <h4 className="hidden md:block">Willem<span className="font-bold text-red-600">-</span><span className="font-bold text-emerald-400">April</span></h4>
                 <h4 className="block text-bold text-2xl md:hidden">W<span className="text-emerald-500">April</span><span className="text-red-500 text-3xl">.</span></h4>
@@ -74,7 +75,8 @@ function Navbar() {
                     </li>
                 </ul>
             </div>
-        </div>
+            </div>
+        </nav>
     )
 }
 
