@@ -1,14 +1,49 @@
+import { useState } from "react";
 import Navbar from '../../components/Navbar/Navbar'
-import Banner from '../../sections/Banner/Banner'
-import Skills from '../../sections/Skills/Skills'
 import Header from '../../components/Header/Header'
+import About from '../../sections/About/About';
+import Projects from '../../sections/Projects/Projects';
+import Blog from '../../sections/Blog/Blog';
+
 function Home() {
+  const [activeTab, setActiveTab] = useState(1);
+  const tabs = [
+    {
+      id: 1,
+      title: 'About',
+    },
+    {
+      id: 2,
+      title: 'Projects',
+    },
+    {
+      id: 3,
+      title: 'Blog',
+    }
+  ]
+
+  const renderSection = () => {
+    switch (activeTab) {
+      case 1:
+        return <About />;
+      case 2:
+        return <Projects />;
+      case 3:
+        return <Blog />;
+
+    }
+  }
   return (
     <div className="h-auto">
-        <Navbar/>
-        <Header/>
-        <Banner/>
-        <Skills/>
+      <Navbar />
+      <Header tabs={tabs} activeTab={activeTab} onTabClick={setActiveTab}/>
+
+      {/* Tab content */}
+      <div className="">
+        {
+          renderSection()
+        }
+      </div>
     </div>
   )
 }

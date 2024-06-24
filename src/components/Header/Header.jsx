@@ -1,27 +1,30 @@
+/* eslint-disable react/prop-types */
 import profile from '../../assets/banner.jpg'
 import banner from '../../assets/banner1.jpg';
 import { FaFacebook, FaLinkedin, FaInstagram, FaWhatsapp, FaGithub } from "react-icons/fa";
+import Tabs from '../Tabs/Tabs';
 
-function Header() {
+function Header({ tabs, activeTab, onTabClick }) {
+    
     return (
-        <header className="-z-10 h-[80vh] w-full flex flex-col items-center bg-slate-950">
+        <header className="-z-10 h-[80vh] max-md:h-auto w-full flex flex-col items-center bg-slate-950">
             {/* Banner */}
             <div className="relative h-[30%] sm:h-[40%] md:h-[50%] lg:h-[60%] w-full lg:w-[90%] max-w-[1440px] rounded-b-lg shadow-lg overflow-hidden">
                 <img src={banner} className='h-full w-full object-cover' />
                 <div className="absolute left-0 top-0 h-full w-full opacity-50 bg-black"></div>
             </div>
             {/* Wrapper */}
-            <div className="relative mb-2 px-3 h-[60%] sm:h-[50%] md:h-[40%] lg:h-[30%] lg:w-[90%] w-full max-w-[1440px]">
+            <div className="relative mb-2 px-3 h-auto sm:h-1/2 md:h-[40%] lg:h-[30%] lg:w-[90%] w-full max-w-[1440px]">
                 {/* Profile Wrapper*/}
-                <div className="h-[80%] w-full flex items-start justify-between max-md:flex-col max-md:gap-2">
+                <div className="h-[80%] max-md:h-auto w-full flex items-start justify-between max-md:flex-col max-md:gap-2">
                     <div className="flex items-center h-full max-md:flex-col">
                         {/* Image */}
-                        <div className="-mt-14 2xl:-mt-40 lg:ml-8 max-sm:h-[100px] max-md:h-[150px] md:h-[180px] 2xl:h-[350px] cursor-pointer border-4 border-slate-700 rounded-full overflow-hidden bg-slate-600">
+                        <div className="-mt-14 2xl:-mt-40 max-md:-ml-20 lg:ml-8 max-sm:h-[120px] max-md:h-[150px] md:h-[180px] 2xl:h-[350px] cursor-pointer border-4 border-slate-700 rounded-full overflow-hidden bg-slate-600">
                             <img src={profile} className='w-full h-full object-cover' />
                         </div>
                         <div className="ml-2 2xl:-mt-32">
                             {/* Name and Profession */}
-                            <div className="flex flex-col gap-4">
+                            <div className="flex flex-col gap-1 2xl:gap-4">
                                 <h1 className='text-3xl 2xl:text-8xl font-bold'>Willem April</h1>
                                 <h2 className='text-slate-400 2xl:text-3xl 2xl:w-fit font-semibold w-[200px]'>Aspiring Web Developer (FullStack Developer)</h2>
                             </div>
@@ -70,7 +73,11 @@ function Header() {
 
             </div>
             <div className="h-[1px] w-full bg-gray-700"></div>
-            <div className="h-[10%]"></div>
+
+            {/* Tabs */}
+            <div className="max-md:h-auto w-full">
+                <Tabs tabs={tabs} activeTab={activeTab} onTabClick={onTabClick}/>
+            </div>
         </header>
     )
 }
