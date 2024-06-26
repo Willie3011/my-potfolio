@@ -1,8 +1,9 @@
+/* eslint-disable react/no-unescaped-entities */
 import banner from '../../assets/banner.svg'
 
 function Banner() {
     return (
-        <div className="flex m-auto max-w-[1440px] mt-4 pb-8 gap-2 h-auto lg:h-[90vh] lg:flex-row flex-col">
+        <section className="flex m-auto max-w-[1440px] mt-4 pb-8 gap-2 h-auto lg:flex-row flex-col">
             {/* Left */}
             <div className="lg:w-1/2 flex lg:mt-6 flex-col">
                 <h1 className="text-[16px] font-semibold bg-slate-700 w-fit h-[36px] p-1 rounded-lg border-b-2 border-b-emerald-500 hover:border-l-2 hover:border-b-4 cursor-pointer hover:border-l-emerald-500 text-emerald-500 text-balance md:text-wrap">About me</h1>
@@ -15,7 +16,7 @@ function Banner() {
                 </p>
 
                 <div className="mt-6">
-                    <button className='bg-slate-700 text-emerald-400 font-semibold px-4 py-2 rounded-3xl border-b-2 border-emerald-500 hover:border-l-2 hover:border-b-4 duration-50 transition-all active:border-l-4'>Let's connect</button>
+                    <button className='bg-slate-700 h-[44px] text-red-400 font-semibold px-4 py-2 rounded-3xl border-b-2 border-red-500 active:border-l-4 hover:border-b-4 duration-50 transition-all hover:text-red-400 active:scale-95'>Let's connect</button>
                 </div>
             </div>
 
@@ -23,7 +24,7 @@ function Banner() {
             <div className="lg:w-1/2 mt-4 lg:mt-0 lg:flex relative">
                 <img src={banner} className='h-full w-full object-contain' />
             </div>
-        </div>
+        </section>
     )
 }
 

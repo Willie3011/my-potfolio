@@ -4,6 +4,7 @@ import Header from '../../components/Header/Header'
 import About from '../../sections/About/About';
 import Projects from '../../sections/Projects/Projects';
 import Blog from '../../sections/Blog/Blog';
+import { services, skills } from "../../data/data";
 
 function Home() {
   const [activeTab, setActiveTab] = useState(1);
@@ -25,7 +26,7 @@ function Home() {
   const renderSection = () => {
     switch (activeTab) {
       case 1:
-        return <About />;
+        return <About services={services} skills={skills}/>;
       case 2:
         return <Projects />;
       case 3:
