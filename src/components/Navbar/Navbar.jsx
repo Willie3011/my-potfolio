@@ -20,7 +20,7 @@ function Navbar() {
     }
     return (
         <nav className="p-2 h-[60px] flex items-center justify-between">
-            <div className="container w-[80%] m-auto flex justify-between">
+            <div className="container w-[80%] m-auto flex items-center justify-between">
             <div className="font-semibold text-xl">
                 <h4 className="hidden md:block">Willem<span className="font-bold text-red-600">-</span><span className="font-bold text-emerald-400">April</span></h4>
                 <h4 className="block text-bold text-2xl md:hidden">W<span className="text-emerald-500">April</span><span className="text-red-500 text-3xl">.</span></h4>
@@ -33,14 +33,9 @@ function Navbar() {
                     <li className="font-semibold p-2 text-slate-400 transition-all duration-300 hover:text-emerald-200">
                         <a href="#">About</a>
                     </li>
-                    <li className="font-semibold p-2 text-slate-400 transition-all duration-300 hover:text-emerald-200">
-                        <a href="#">Skills</a>
-                    </li>
+                    
                     <li className="font-semibold p-2 text-slate-400 transition-all duration-300 hover:text-emerald-200">
                         <a href="#">Projects</a>
-                    </li>
-                    <li className="font-semibold p-2 text-slate-400 transition-all duration-300 hover:text-emerald-200">
-                        <a href="#">Contact</a>
                     </li>
                     <li >
                         <button className="ml-4 px-4 py-2 rounded-3xl font-semibold bg-red-500 hover:bg-slate-500 transition-all duration-300 ease-in">Download CV</button>

@@ -1,10 +1,9 @@
-
+import Banner from '../Banner/Banner';
 
 function About() {
   return (
-    <div className="h-screen">
-      {/* Personal Information */}
-      <div className=""></div>
+    <div className="h-auto px-8">
+      <Banner/>
       {/* Education */}
       <div className=""></div>
       {/* Skills */}

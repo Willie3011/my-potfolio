@@ -72,7 +72,7 @@ function Header({ tabs, activeTab, onTabClick }) {
                 </div>
 
             </div>
-            <div className="h-[1px] w-full bg-gray-700"></div>
+            <div className="h-[2px] w-full bg-gray-900"></div>
 
             {/* Tabs */}
             <div className="max-md:h-auto w-full">
