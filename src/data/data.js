@@ -10,32 +10,47 @@ import { TbDeviceMobileHeart } from "react-icons/tb";
 
 export const skills = [
     {
+        id: 1,
         imgUrl: css,
-        title: "CSS"
+        title: "CSS",
+        progress: 80
     },
     {
+        id: 2,
         imgUrl: tailwind,
-        title: "Tailwind CSS"
+        title: "Tailwind CSS",
+        progress: 45
     },
     {
+        id: 3,
         imgUrl: html,
-        title: "HTML"
+        title: "HTML",
+        progress: 90
     },
     {
+        id: 4,
         imgUrl: javascript,
-        title: "JavaScript"
+        title: "JavaScript",
+        progress: 70
     },
     {
+        id: 5,
         imgUrl: react,
-        title: "React Framework"
+        title: "React Framework",
+        progress: 40
+
     },
     {
+        id: 6,
         imgUrl: github,
-        title: "GitHub"
+        title: "GitHub",
+        progress: 90
     },
     {
+        id: 7,
         imgUrl: firebase,
-        title: "Firebase"
+        title: "Firebase",
+        progress: 60
     }
 ]
 

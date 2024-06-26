@@ -4,7 +4,7 @@ import Header from '../../components/Header/Header'
 import About from '../../sections/About/About';
 import Projects from '../../sections/Projects/Projects';
 import Blog from '../../sections/Blog/Blog';
-import { services, skills } from "../../data/data";
+import { skills, services } from "../../data/data";
 
 function Home() {
   const [activeTab, setActiveTab] = useState(1);

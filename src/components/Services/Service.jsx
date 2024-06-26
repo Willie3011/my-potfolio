@@ -2,7 +2,7 @@
 
 function Service( {key, service}) {
   return (
-    <div key={key} className="max-sm:h-auto h-[260px] p-4 w-full border-1 bg-slate-800 border-emerald-500 rounded-lg hover:border-2 overflow-hidden">
+    <div key={key} className="max-sm:h-auto h-[260px] p-4 w-full border border-slate-600 bg-slate-800 hover:border-emerald-500 rounded-lg duration-200 overflow-hidden">
         {/* icon */}
         <div className="bg-slate-600 w-8 h-8 flex items-center justify-center rounded-full">
             {<service.icon className="text-emerald-400 text-xl"/>}
