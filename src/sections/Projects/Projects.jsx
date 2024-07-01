@@ -19,8 +19,6 @@ function Projects() {
     }
   }, [])
 
-  console.log(projects.length)
-  console.log(ProjectArr)
   return (
     <section className={"h-auto flex flex-col gap-2 px-4 mt-4 text-semibold w-screen"}>
       <span className="text-base font-semibold bg-slate-700 w-fit h-[36px] p-1 rounded-lg border-b-2 border-b-emerald-500 hover:border-l-2 hover:border-b-4 cursor-pointer hover:border-l-emerald-500 text-emerald-500 text-balance md:text-wrap">

@@ -6,7 +6,7 @@ import Projects from "../../sections/Projects/Projects";
 import Blog from "../../sections/Blog/Blog";
 import { skills, services } from "../../data/data";
 
-function Home() {
+function Home({handleAuth}) {
   const [activeTab, setActiveTab] = useState(1);
   const tabs = [
     {

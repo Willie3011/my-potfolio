@@ -1,12 +1,11 @@
-// import { Link } from "react-router-dom"
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { RiMenu3Fill } from "react-icons/ri";
 import { MdClose } from "react-icons/md";
 
-function Navbar() {
+function Navbar({isAuthorized}) {
   const [toggleMenu, setToggleMenu] = useState(false);
   let menuButton;
-
   if (toggleMenu) {
     menuButton = <MdClose />;
   } else {
@@ -32,7 +31,7 @@ function Navbar() {
         <div className="text-sm lg:flex hidden">
           <ul className="flex items-center gap-2">
             <li className="font-semibold p-2 text-slate-400 transition-all duration-300 hover:text-emerald-200">
-              <a href="#">Home</a>
+              <a href="/my-potfolio/">Home</a>
             </li>
             <li className="font-semibold p-2 text-slate-400 transition-all duration-300 hover:text-emerald-200">
               <a href="#">About</a>
@@ -42,9 +41,12 @@ function Navbar() {
               <a href="#">Projects</a>
             </li>
             <li>
-              <button className="ml-4 px-4 py-2 rounded-3xl font-semibold bg-red-500 hover:bg-slate-500 transition-all duration-300 ease-in">
-                Download CV
-              </button>
+              <a href="/my-potfolio/login" className="ml-4 px-4 py-2 rounded-3xl font-semibold bg-red-500 active:scale-95 hover:bg-slate-500 transition-all duration-300 ease-in">
+                {isAuthorized ? "Logout" :"Login"}
+              </a>
+            </li>
+            <li>
+              
             </li>
           </ul>
         </div>
@@ -64,15 +66,9 @@ function Navbar() {
               : "transition-all duration-500 ease-out absolute -top-[100%] right-0 left-0 md:right-[0px] bg-slate-700 text-red md:w-[400px] w-screen z-10"
           }
         >
-          <ul className="p-4 flex flex-col w-full items-center gap-2 text-xl">
+          <ul className="p-4 flex flex-col w-full items-center gap-2 text-base">
             <li className=" font-semibold p-2 transition-all duration-300 hover:text-emerald-200">
-              <a href="#">Home</a>
-            </li>
-            <li className="font-semibold p-2 transition-all duration-300 hover:text-emerald-200">
-              <a href="#">About</a>
-            </li>
-            <li className="font-semibold p-2 transition-all duration-300 hover:text-emerald-200">
-              <a href="#">Skills</a>
+              <a href="/my-potfolio/">Home</a>
             </li>
             <li className="font-semibold p-2 transition-all duration-300 hover:text-emerald-200">
               <a href="#">Projects</a>
@@ -80,10 +76,10 @@ function Navbar() {
             <li className="font-semibold p-2  transition-all duration-300 hover:text-emerald-200">
               <a href="#">Contact</a>
             </li>
-            <li className="w-full p-2">
-              <button className="px-4 py-2 rounded-xl font-semibold w-full bg-red-500 hover:bg-slate-500 transition-all duration-300 ease-in">
-                Download CV
-              </button>
+            <li className="w-full p-2 text-center">
+              <a href="/my-potfolio/login" className="px-4 py-2 block rounded-xl font-semibold bg-red-700 hover:bg-slate-500 transition-all duration-300 ease-in">
+                Login
+              </a>
             </li>
           </ul>
         </div>
